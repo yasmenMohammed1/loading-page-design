@@ -105,9 +105,73 @@
   height: 80px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 506px) {
   .avatar {
-    top: 100px;
+    width: 10%;
+    height: 29%;
+    top: 240px;
+  }
+  .right-side {
+    font-size: 10px;
+  }
+  .logo-text {
+    position: absolute;
+    top: 110px;
+    right: 10px;
+  }
+
+  hr.vl {
+    height: 20px;
+    top: 5px;
+  }
+  .logo {
+    width: 50%;
+  }
+  .upper .connection-details {
+    font-size: 9px;
+    display: flex;
+    width: 70%;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    right: 10px;
+  }
+
+  section.links-side {
+    font-size: 10.5px;
+
+    position: relative;
+    font-weight: bolder;
+    word-wrap: normal;
+    justify-content: space-between;
+    left: 5%;
+    right: 200px;
+    align-items: center;
+    align-content: flex-start;
+
+    align-items: center;
+  }
+  .main .larg-text {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  section.main {
+    position: relative;
+    top: 30px;
+  }
+  .main .less-text {
+    font-size: 12px;
+    font-weight: normal;
+  }
+  .main .text-span {
+    bottom: 50px;
+  }
+}
+@media screen and (max-width: 505px) {
+  .avatar {
+    width: 10%;
+    height: 29%;
+    top: 113px;
   }
   .right-side {
     font-size: 10px;
