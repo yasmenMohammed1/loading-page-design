@@ -104,10 +104,81 @@
 .lower-nav {
   height: 80px;
 }
-
+@media screen and (min-width: 1024px) {
+  .avatar {
+    width: 6%;
+    height: 12%;
+    top: 430px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .avatar {
-    top: 100px;
+    width: 6%;
+    height: 20%;
+    top: 230px;
+  }
+  .right-side {
+    font-size: 10px;
+  }
+  .logo-text {
+    position: absolute;
+    top: 110px;
+    right: 10px;
+  }
+
+  hr.vl {
+    height: 20px;
+    top: 5px;
+  }
+  .logo {
+    width: 50%;
+  }
+  .upper .connection-details {
+    font-size: 9px;
+    display: flex;
+    width: 70%;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    right: 10px;
+  }
+  .language {
+    display: none;
+  }
+
+  section.links-side {
+    font-size: 10.5px;
+    left: 0;
+    right: auto;
+    position: relative;
+    font-weight: bolder;
+    word-wrap: normal;
+    justify-content: space-between;
+
+    align-items: center;
+  }
+  .main .larg-text {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  section.main {
+    position: relative;
+    top: 30px;
+  }
+  .main .less-text {
+    font-size: 12px;
+    font-weight: normal;
+  }
+  .main .text-span {
+    bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .avatar {
+    width: 10%;
+    height: 29%;
+    top: 113px;
   }
   .right-side {
     font-size: 10px;
@@ -217,7 +288,7 @@ nav {
   justify-content: right;
 }
 .main-img {
-  opacity: 0.2;
+  opacity: 0.5;
 }
 .larg-text {
   font-size: 36px;
