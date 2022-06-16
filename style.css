@@ -1,0 +1,282 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0;
+
+  box-sizing: border-box;
+  margin: 0;
+}
+.first {
+  font-size: 12px;
+}
+.second {
+  font-size: 7px;
+}
+.name {
+  font-size: large;
+}
+.position {
+  font-size: small;
+}
+.member {
+  text-align: center;
+}
+.last-members {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-evenly;
+}
+
+.social-media {
+  top: 20px;
+  position: relative;
+}
+
+.connection-item a {
+  color: #3d45b5;
+  margin: auto;
+  text-decoration: none;
+}
+.connection-details {
+  align-items: center;
+  display: flex;
+  width: 30%;
+
+  position: absolute;
+  right: 0;
+  font-size: 15px;
+}
+
+.animated {
+  width: 120px;
+  height: 80px;
+  border: 5px gray solid;
+  position: relative;
+  border-radius: 3%;
+  opacity: 0.1;
+  z-index: -50;
+  top: 60px;
+  right: 20px;
+  margin: auto;
+}
+.footer-text {
+  margin: auto;
+  font-size: 25px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  position: relative;
+  top: 0px;
+}
+
+.footer {
+  position: relative;
+  top: 100px;
+}
+.ceo {
+  position: relative;
+  top: 50px;
+  text-align: center;
+  margin: auto;
+}
+.logo-text {
+  text-align: center;
+  font-weight: 800;
+
+  color: grey;
+  margin: auto;
+  position: absolute;
+  top: 130px;
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 420px;
+
+  right: 5px;
+}
+.avatar:hover {
+  border: 2px #8e8b8b dashed;
+}
+.lower-nav {
+  height: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  .avatar {
+    top: 100px;
+  }
+  .right-side {
+    font-size: 10px;
+  }
+  .logo-text {
+    position: absolute;
+    top: 110px;
+    right: 10px;
+  }
+
+  hr.vl {
+    height: 20px;
+    top: 5px;
+  }
+  .logo {
+    width: 50%;
+  }
+  .upper .connection-details {
+    font-size: 9px;
+    display: flex;
+    width: 70%;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    right: 10px;
+  }
+  .language {
+    display: none;
+  }
+
+  section.links-side {
+    font-size: 10.5px;
+    left: 0;
+    right: auto;
+    position: relative;
+    font-weight: bolder;
+    word-wrap: normal;
+    justify-content: space-between;
+
+    align-items: center;
+  }
+  .main .larg-text {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  section.main {
+    position: relative;
+    top: 30px;
+  }
+  .main .less-text {
+    font-size: 12px;
+    font-weight: normal;
+  }
+  .main .text-span {
+    bottom: 50px;
+  }
+}
+section.links-side select {
+  /* align-self: flex-start; */
+  margin-bottom: 4px;
+}
+section.links-side a {
+  text-decoration: none;
+  color: #3d45b5;
+}
+hr.hr1 {
+  border: 1px solid #3d45b5;
+}
+
+.vl {
+  border-left: 3px solid gray;
+  height: 40px;
+  transform: rotate(180deg);
+  position: absolute;
+  right: 40px;
+  top: 15px;
+}
+
+.lower-nav {
+  direction: rtl;
+
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #3d45b5;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  margin: auto;
+  width: 95%;
+}
+
+.fa-location-dot,
+.fa-phone,
+.fa-brands,
+.fa-instgram,
+.fa-twitter {
+  margin: 4px;
+  color: #3d45b5;
+}
+.upper {
+  height: 50px;
+
+  justify-content: right;
+}
+.main-img {
+  opacity: 0.2;
+}
+.larg-text {
+  font-size: 36px;
+  font-weight: bold;
+}
+.less-text {
+  font-size: 20px;
+  font-weight: normal;
+}
+.main {
+  word-spacing: 1px;
+  position: relative;
+  top: 40px;
+  text-align: center;
+  width: 100%;
+}
+.text-span {
+  position: absolute;
+  bottom: 100px;
+  left: 30%;
+  right: 30%;
+  color: #1639bc;
+  text-align: center;
+}
+.right-side {
+  float: right;
+  margin-left: 11px;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: grey;
+}
+.left-side {
+  float: left;
+  transform: rotateY(180deg);
+}
+.left-side::after {
+  content: "";
+  clear: both;
+}
+
+.links-side {
+  margin-left: 0%;
+  position: relative;
+
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  font-size: 20px;
+  left: 5%;
+  right: 200px;
+  align-items: center;
+  align-content: flex-start;
+}
+.language-text {
+  bottom: 15px;
+  position: relative;
+}
+.language {
+  position: relative;
+  top: 3px;
+}
